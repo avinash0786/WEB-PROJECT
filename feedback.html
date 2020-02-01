@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>feedback</title>
+            <script>
+                function thanks()
+                { 
+                 
+                 if(document.getElementById("t1").value=="")
+                {alert("please enter your name");}
+                
+                alert("THANK YOU FOR  YOUR FEEDBACK");
+                 
+                }
+               
+
+
+            </script>
+        <style>
+            .top{ position: relative;background-color:rgba(174, 238, 240, 0.747);text-align: center;border-left:25px solid rgb(10, 88, 133);
+            margin-bottom:9px;margin-left: 15px;margin-top:-20px ;font-size: 22px;color: rgba(29, 180, 240, 0.993); height: 50px;width:1425px;
+            border-right:25px solid rgb(10, 88, 133);}
+            .op
+           {position: relative;background-color: rgba(174, 238, 240, 0.747);text-align: center;border-left:25px solid rgb(10, 88, 133);
+            margin-bottom:9px;margin-left: 15px;margin-top:-20px ;font-size: 22px;color: rgba(240, 29, 29, 0.993); height: 50px;width:1425px;
+            border-right:25px solid rgb(10, 88, 133);}
+            .t{
+                position: relative;background-color:rgba(174, 238, 240, 0.747);border-left:25px solid rgb(10, 88, 133);
+            margin-left: 15px; margin-top:20px ;font-size: 22px;color: rgba(24, 13, 173, 0.993); height: 600px;width:1425px;
+            border-right:25px solid rgb(10, 88, 133);
+            }
+          
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <h1>CAR RENTAL SYSTEM</h1>
+        </div>
+        <div class="op">
+                <h1>FEEDBACK</h1>
+            </div>
+            <div class="t">
+                    <label>  NAME:</label>
+                    <input type="text" name="name" id="t1" size="50" height="50" /> 
+                      
+                        <br>
+                       
+                     <pre> <label> FEATURES OF CAR THAT WERE AVAILABLE: </label>
+                                <input type="checkbox" name="com">comfortable
+                                <input type="checkbox" name="m">well mainatained
+                                <input type="checkbox" name="n">clean
+                                <input type="checkbox" name="e">all parts were working
+                                <input type="checkbox" name="r">proper seat belts</pre>
+                                 <br>
+                                <label>COMMENTS:</label> 
+                                <textarea rows="10" cols="150"> 
+                                  </textarea>
+                                  <br> 
+                                  <br>
+                                  <label>RATE US:</label>
+                                     <input type="radio" name="ru" id = "option1" value="a" >  very poor
+                                     <input type="radio" name="ru" id = "option2" value="a"> poor
+                                     <input type="radio" name="ru" id = "option3" value="a"> average
+                                     <input type="radio" name="ru" id = "option4" value="a"> good
+                                     <input type="radio" name="ru" id = "option5" value="a"> marvelous
+                                     <br>
+                                     <br>
+                                     <br>
+                                   <center>  <button type="button" onclick="thanks()" >SUBMIT </button></center>
+         
+    
+            </div>
+                
+            
+
+                
+        
+    </body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head><title>CAR RENTAL SYSTEM </title>
+        <style>
+            body {background-color: rgba(57, 174, 228, 0.233)}
+            .top{ background-color: rgba(159, 188, 189, 0.493);text-align: center;border-left:25px solid rgb(10, 88, 133);
+            margin-bottom:9px;margin-left: 15px;margin-top:-30px ;font-size: 22px;color: rgb(10, 92, 124); height: 50px;width:1425px;
+            border-right:25px solid rgb(10, 88, 133);}
+             
+            .menu {background-color: rgba(10, 110, 150, 0.432);border-bottom: 5px solid rgb(15, 96, 128); 
+            height: 40px;width: 1509px; text-align:left;padding-top:10px; float:left;}
+
+            p1{text-align:right; font-size: 35px;padding:0px; display: inline;text-decoration: none;
+            margin-right:40px ;color: rgba(4, 40, 51, 0.849);}
+            #menulogin{text-decoration: none;font-size: 35px; color: rgba(4, 40, 51, 0.849);}
+            p1:hover{color: rgb(253, 253, 253); }
+            div.bottom{position:sticky;top:0; background-color:#dad1d1b7; margin-top: 80px; width: 1509px;height: 50px;
+            text-align: center;padding-top: 2px;text-decoration: none;}
+            p2{
+                margin-right: 20px;font-size: 33px;padding:0px;  margin-bottom: 1px;
+            }
+            p2:hover{
+                box-shadow: 0 0 9px 2px #c2bdbdd0; color: #067bb1f6;
+            }
+            input[type=text]{
+                font-size: 28px;padding: 1px;margin-bottom: 2px;}
+            #menulogin:hover{ color: #fcfdfdf6;}
+            .search{ height: 510px; width:350px;background-color: rgba(10, 119, 182, 0.952);margin-top: 3PX;text-align: center;margin-left: 40px;
+            font-size: 29px; border: 4px rgb(4, 81, 145) ridge; border-radius: 3px;}
+
+
+            form{margin-left: 3px; padding: 1px ; size: 50px; font-size: 35px;}
+         input[type=email], input[type=password] { width: 80%; padding: 15px; margin: 0px 0 30px 0; border:2px ridge rgba(1, 83, 138, 0.966); border-radius: 9px; background: #f1f1f1; }
+        input[type=email]:focus, input[type=password]:focus {  background-color: rgb(235, 235, 235); outline: none;border:2px ridge rgba(235, 242, 245, 0.945)}
+        #date{ border: 2px solid #c4c1c1; border-radius: 8px; background-color: rgb(255, 255, 255); padding: 5px 8px; box-shadow: inset 0 3px 6px rgba(0,0,0,0.1); width: 180px;}
+        .c1{margin-top: 50px;margin-left: 110px;height: 500px; width: 360px; background-color: rgba(248, 243, 242, 0.651);float: left;}
+        .c2{margin-top: 50px;margin-left: 100px;height: 500px; width: 360px; background-color: rgba(248, 243, 242, 0.651);float: left;}
+        .c3{margin-top: 50px;margin-left: 100px;height: 500px; width: 360px; background-color: rgba(248, 243, 242, 0.651);float: left;}
+        .c4{margin-top: 50px;margin-left: 110px;height: 500px; width: 360px; background-color: rgba(248, 243, 242, 0.651);float: left;}
+        .c5{margin-top: 50px;margin-left: 100px;height: 500px; width: 360px; background-color: rgba(248, 243, 242, 0.651);float: left;}
+        .c6{margin-top: 50px;margin-left: 100px;height: 500px; width: 360px; background-color: rgba(248, 243, 242, 0.651);float: left;}
+
+        .l1{margin-top: 50px;margin-left: 60px;height: 350px; width: 400px; background-color: rgba(224, 230, 230, 0.692);float: left;}
+        .l2{margin-top: 50px;margin-left: 90px;height: 350px; width: 400px; background-color: rgba(224, 230, 230, 0.692);float: left;}
+        .l3{margin-top: 50px;margin-left: 90px;height: 350px; width: 400px; background-color: rgba(224, 230, 230, 0.692);float: left;}
+        .l4{margin-top: 50px;margin-left: 60px;height: 350px; width: 400px; background-color: rgba(212, 68, 11, 0.493);float: left;}
+        .l5{margin-top: 50px;margin-left: 90px;height: 350px; width: 400px; background-color: rgba(212, 68, 11, 0.493);float: left;}
+        .l6{margin-top: 50px;margin-left: 90px;height: 350px; width: 400px; background-color: rgba(212, 68, 11, 0.493);float: left;}
+        
+        .end{margin-top: 50px;height: 200px; width: 1509px; background-color: rgba(5, 134, 173, 0.877);float: left;}
+        .open{  height: 509px; width: 1090px; background-color: crimson;margin-left: 410px; margin-top: 6px;}
+       #button{ height: 33px; width: 90px; border: 3px solid rgb(255, 255, 255); background-color: red;
+             padding: 2px;text-align: center;font-size: 30px;text-decoration: none; color: white;} 
+             #button:hover{ background-color: white;color: red;border-bottom-color: red;}
+         .byt{ margin-left: 130px; } .but{ margin-left: 110px; } 
+         #inf{ color: rgb(121, 26, 26); font-size: 20px;}
+             #inf:hover{color: rgb(88, 24, 24);font-size: 25px; }
+
+             #menulogin{text-decoration: none;font-size: 35px; color: rgba(4, 40, 51, 0.849);}
+             #menulogin:hover{ color: #fcfdfdf6;}  
+            
+ 
+        </style>
+    </head>
+    <body background="html2.jpg">
+        <div class="top">
+            <h1>CAR RENTAL SYSTEM</h1>
+        </div>
+        <div class="menu">
+            <img src="Unt.png" style=" float: left; width:70px;height:36px;padding-left:20px; margin-right: 130px">
+            <p1>MANAGE BOOKING |</p1>
+            <p1>POPULAR LOCATION |</p1> 
+            <p1 >SIGN UP |</p1>
+            <a id="menulogin" href="login.html">LOGIN</a>
+        </div>
+        <div class="bottom">
+            <a  href="#home"> <img src="home.jpg" style=" width:80px;height:30px;margin-right:50px;border: 2px ridge rgba(145, 134, 134, 0.699);margin-top:2px;"></a>
+            <p2>HIRE CAR |</p2>
+            <p2>COMPARE |</p2>
+            <input type="text" name="text" size="30px" placeholder="CAR TO DRIVE" >
+            <p2>SEARCH </p2>
+        </div><br>
+        <div class="search">
+            <b >BOOK<br>YOUR JOURNEY</b><br>
+            <img src="car2.png" height="80px" width="90px">
+                    <form>
+                        <input type="email" placeholder="From*" required size="70" >
+                        <input type="email" placeholder="To*" required minlength="8" size="70px" >
+                    </form>
+                    <input id="date" type="date" name="dateoftravel" id="dateoftravel"><br><br>
+                    <b><a href="#search" style=" text-decoration:none; font-size:25px; color: rgb(254, 255, 254); padding: 10px;background-color: rgb(180, 51, 51);margin-top: 30px; border: 4px rgb(240, 239, 222) solid; border-radius:9px;padding: 6px;">SHOW CARS</a></b>
+           </div>
+           <div class="open">
+
+        </div>
+
+        <hr>
+
+           <div class="l1">
+            <img src="Fortuner.jpg" style="height:230px;width: 380px; margin: 10px; ">
+            <div class="byt">
+                <a href="#button" id="button">FORTUNER</a>
+        </div>
+        <b><p style="color: rgb(160, 8, 8); font-size: 25px; text-align: center;">Starting &#8377 50000 /day</p></b>
+           </div>
+
+
+           <div class="l2">
+            <img src="jeep.jpg" style="height:230px;width: 380px; margin: 10px; ">
+            <div class="byt">
+                <a href="#button" id="button">THAR 4X4</a>
+        </div>
+        <b><p style="color: rgb(160, 8, 8); font-size: 25px; text-align: center;">Starting &#8377 35000 /day</p></b>
+           </div>
+
+
+           <div class="l3"> 
+            <img src="scor.jpg" style="height:230px;width: 380px; margin: 10px; ">
+            <div class="byt">
+                <a href="#button" id="button">SCORPIO</a>
+        </div>
+        <b><p style="color: rgb(160, 8, 8); font-size: 25px; text-align: center;">Starting &#8377 13000 /day</p></b>
+           </div>
+           
+           <div class="l4">
+            <img src="ford.jpg" style="height:230px;width: 380px; margin: 10px; ">
+            <div class="byt">
+                <a href="#button" id="button">ENDEAVOUR</a>
+        </div>
+        <b><p style="color: rgb(160, 8, 8); font-size: 25px; text-align: center;">Starting &#8377 40000 /day</p></b>
+           </div>
+
+
+           <div class="l5">
+            <img src="creta.png" style="height:230px;width: 380px; margin: 10px; ">
+            <div class="byt">
+                <a href="#button" id="button">CRETA</a>
+        </div>
+        <b><p style="color: rgb(160, 8, 8); font-size: 25px; text-align: center;">Starting &#8377 25000 /day</p></b>
+           </div>
+
+
+           <div class="l6"> 
+            <img src="dacia.jpg" style="height:230px;width: 380px; margin: 10px; ">
+            <div class="byt">
+                <a href="#button" id="button">DUSTER</a>
+        </div>
+        <b><p style="color: rgb(160, 8, 8); font-size: 25px; text-align: center;">Starting &#8377 20000 /day</p></b>
+           </div>
+           
+       
+
+
+           <div class="c1">
+               <img src="taj1.jpg" style="height:180px;width: 360px;  ">
+               <div class="but">
+                <a href="#button" id="button">TAJ MAHAL</a>
+        </div>
+        <b><p style="color: rgb(6, 68, 104); font-size: 40px; text-align: center;">Trip Starting:<br> &#8377 15000 /day</p></b>
+        <div id="inf">
+                <p>Trip best with:FORTUNER, CIAZ.</p>
+            </div>
+           </div>
+
+
+           <div class="c2">
+            <img src="redfort.png" style="height:180px;width: 360px;  ">
+            <div class="but">
+                <a href="#button" id="button">RED FORT</a>
+        </div>
+        <b><p style="color: rgb(6, 68, 104); font-size: 40px; text-align: center;">Trip Starting:<br> &#8377 20000 /day</p></b>
+        <div id="inf">
+                <p>Trip best with:SCORPIO, XUV500.</p>
+            </div>
+           </div>
+
+
+           <div class="c3">
+            <img src="charmi.png" style="height:180px;width: 360px;  ">
+            <div class="but">
+                <a href="#button" id="button">HYDRABAD</a>
+        </div>
+        <b><p style="color: rgb(6, 68, 104); font-size: 40px; text-align: center;">Trip Starting:<br> &#8377 30000 /day</p></b>
+        <div id="inf">
+                <p>Trip best with:THAR,ENDEAVOR.</p>
+            </div>
+           </div>
+
+
+           <div class="c4">
+            <img src="statue.jpg" style="height:180px;width: 360px;  ">
+            <div class="but">
+                <a href="#button" id="button">GUJRAT</a>
+        </div>
+        <b><p style="color: rgb(6, 68, 104); font-size: 40px; text-align: center;">Trip Starting:<br> &#8377 20000 /day</p></b>
+        <div id="inf">
+                <p>Trip best with:DUSTER,THAR 4X4.</p>
+            </div>
+           </div>
+
+
+           <div class="c5">
+            <img src="Kolkata.png" style="height:180px;width: 360px;  ">
+            <div class="but">
+                <a href="#button" id="button">KOLKATA</a>
+        </div>
+        <b><p style="color: rgb(6, 68, 104); font-size: 40px; text-align: center;">Trip Starting:<br> &#8377 35000 /day</p></b>
+        <div id="inf">
+                <p>Trip best with:CRETA,BOLERO.</p>
+            </div>
+           </div>
+
+
+           <div class="c6">
+            <img src="Picture.png" style="height:180px;width: 360px;  ">
+            <div class="but">
+                <a href="#button" id="button">PATNA</a>
+        </div>
+        <b><p style="color: rgb(6, 68, 104); font-size: 40px; text-align: center;">Trip Starting:<br> &#8377 55000 /day</p></b>
+        <div id="inf">
+                <p>Trip best with:SCORPIO,FORTUNER</p>
+            </div>
+           </div>
+           <div class="end"></div>
+       
+
+    </body>
+</html>

@@ -1,0 +1,28 @@
+*{
+	padding: 0;
+	margin: 0;
+	
+}
+body{
+	background-image: url(back2.jpg);
+	position: absolute;
+	 background-size: cover;
+	  height: 100vh;
+	  background-repeat: no-repeat;
+	  opacity: 0.7;
+	  width: 100%;
+	  background-attachment: fixed;
+	  background-position: center;
+}
+h1{
+	
+
+	
+	font-family: algerian;
+	font-size: 60px;
+	color: #4d0000;
+	font-weight: bold;
+}
+.loc{
+	background-color: red;
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="s3.css">
+</head>
+<body>
+<section>
+<div class="loader"></div>
+<div class="count"></div>
+
+
+</section>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js">
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+var count = 0;
+var counter = setInterval(function(){
+if(count < 101)
+{
+$('.count').text(count + '%');
+count++
+}
+else{
+clearInterval (counter)
+
+}
+},80)
+
+})
+</script>
+</body>

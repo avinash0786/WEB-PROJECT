@@ -1,0 +1,131 @@
+
+
+.header{
+  height: 100px;
+  background: #34495e;
+  padding: 0 20px;
+  color: #fff;
+}
+.logo{
+  line-height: 100px;
+  float: left;
+  text-transform: uppercase;
+}
+
+.menu{
+  float: right;
+  line-height: 100px;
+}
+.menu a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: #3498db;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.content{
+  padding: 0 20px;
+}
+.content img{
+  width: 100%;
+  max-width: 700px;
+  margin: 20px 0;
+}
+.content p{
+  text-align: justify;
+}
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+}
+p{
+  font-family: times new roman
+   ;
+color: skyblue ;
+font-size: 20px;
+
+}
+.image{
+  margin: 30px;
+  position: absolute;
+  border: solid black;
+  padding: 30px;
+  display: block;
+}
+.image1{
+  margin: 30px;
+  position: absolute;
+  border: solid black;
+  padding: 30px;
+  display: block;
+}
+@keyframes moveinright{
+  0%{
+    opacity: 1;
+    
+    transform: translateX(100px);
+
+    }
+    
+    80%{opacity: 1;
+      transform: translateX(-10px);
+    }
+    100%{
+      
+      opacity: 1.5;
+      transform: translate(0px);
+    }
+  }
+  .image:hover{
+    animation: moveinright 30s ease-out;
+  }

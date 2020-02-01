@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="genure.css">
+
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+  background-image: url(qqq.jpg); 
+ 
+background-size: cover;
+background-repeat: no-repeat;
+
+background-attachment: fixed;
+  background-position: center; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+   <header id="top" class="grid">
+        
+
+   
+        <div class="menu">
+            <ul>
+
+              <a href="logged.html"><img src="home.jpg" style=" width:80px; height:30px; margin-right:50px;border:2px ridge rgba(145, 134, 134, 0.699);margin-top:2px;"></a>
+
+                      </div>
+
+    </header>
+
+<center><h2 style="color: #888844; font-family: algerian; background-color: lightgrey;opacity: 0.7; height:40px;width: 400px; font-size: 40px;border-radius:100%">car booking chackout</h2></center>
+<center><p style="color:  #1a1a00;text-shadow:2px 2px; background-color: white;font-size: 22px;width: 300px;   font-family: serif;opacity: 0.7;">we accept all types of cradit and dabit cards</p></center>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php" style="position: absolute;left: 400px;background-color: black;opacity: 0.6;height: 1400px; width: 500px ; color: white; font-weight: bold;" >
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user" style="color: white;font-weight: bold;"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"style="color: white;font-weight: bold;"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o" style="color: white;font-weight: bold;"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution" style="color: white;font-weight: bold;"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state"style="color: white;font-weight: bold;">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip"style="color: white;font-weight: bold;">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+                <P>DURATION:</P>
+                FROM:<input type="date" name="form">
+                &nbsp&nbsp TO: <input type="date" name="to">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3 style="color: white;font-weight: bold;">Payment</h3>
+            <label for="fname" style="color: white;font-weight: bold;">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname" style="color: white;font-weight: bold;">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum" style="color: white;font-weight: bold;">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth" style="color: white;font-weight: bold;">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50" style="color: white;font-weight: bold;">
+                <label for="expyear" style="color: white;font-weight: bold;">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv" style="color: white;font-weight: bold;">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr" style="color: white;font-weight: bold;"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn" style="height: 30px;width:200px;padding: 3px;margin-top: 30px;position: relative;left: 140px; ">
+      </form>
+    </div>
+ 
+</body>
+</html>

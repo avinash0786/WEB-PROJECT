@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+             <style>
+            .top{ position: relative;background-color: rgba(101, 219, 221, 0.37);text-align: center;border-left:25px solid rgb(10, 88, 133);
+            margin-bottom:9px;margin-left: 15px;margin-top:-20px ;font-size: 22px;color: rgba(29, 180, 240, 0.993); height: 50px;width:1425px;
+            border-right:25px solid rgb(10, 88, 133);}
+            .bot{ position: relative;background-color: rgba(161, 178, 179, 0.37);text-align: center;border-left:25px solid rgba(8, 116, 8, 0.76);
+            margin-bottom:9px;margin-left: 15px;margin-top:-20px ;font-size: 22px;color: rgb(27, 180, 60); height: 50px;width:1425px;
+            border-right:25px solid rgb(8, 116, 8, 0.76);}
+        body { font-family: Arial, Helvetica, sans-serif; background-image: url("Five.jpg"); background-size:1539px 769px}
+        .topright{
+            background-color:rgba(202, 199, 199, 0.562);position: absolute; top: 100px; right:550px; font-size: 30px; height: 550px; width:30%;margin-left: 80px;margin-top: 30px;
+        }
+        form{margin-left: 10px; padding: 1px ; size: 20px; font-size: 25px;}
+        input[type=text], input[type=option] { width: 50%; padding: 10px; margin: 0px 0 10px 0; border: none; background: #f1f1f1; }
+        input[type=email]:focus, input[type=submit]:focus {  background-color: #ddd; outline: none;}
+        a:hover{ color: #e0f0dee3;}
+        a{text-decoration: none;font-size: 40px; color: rgb(32, 33, 34);}
+        </style>
+    </head>
+    <body>
+            <div class="top">
+                    <h1>CAR RENTAL SYSTEM</h1>
+            </div>
+            <div class="bot">
+                    <h1>FAIR CALCULATE</h1> 
+                </div>
+                
+        <div class="topright">
+            <form name="myform" onsubmit="return(validation());">
+                <center><b style="font-size: 25px;color: rgb(83, 13, 175);">ENTER PARTICULARS</b><BR></center><br>
+                No of days:
+                <input type="text" name="days" id="d1"  size="30"/>
+                Choose Brand:
+                <select name="car" id="c1">
+                        <option value="-1" selected>[Choose yours]</option>
+                        <option value="1">Ford</option>
+                        <option value="2">Toyota</option>
+                        <option value="3">Mahindra</option>
+                        <option value="4">Scoda</option>
+                        <option value="5">Hyundai</option>
+                        <option value="6">Chevorlet</option>
+                    </select><br><br>
+
+                Delivery location:
+                <input type="text" name="del" id="d2" size="30"/><br>
+                Delivery date:
+                <input type="date" name="del" id="d3" size="30"/><br>
+
+                <br>Return location:
+                <input type="text" name="re" id="d4" size="30"/><br>
+                Return Date:
+                <input type="date" name="del" id="d5" size="30"/><br>
+               <br> <center><input type="submit" value="submit"/></center>
+
+            </form>
+        </div>
+        
+        <script>
+                function validation()
+                {
+                    var a,b;
+                    a=document.getElementById("d1").value;
+                    b=document.getElementById("d2").value;
+                    b=document.getElementById("d4").value;
+                    
+
+            if(document.getElementById("d1").value=="")
+            {
+                alert("Please enter your country!");
+                return false;
+            }
+            if(document.getElementById("c1").value=="-1")
+            {
+                alert("Please enter your country!");
+                return false;
+            }
+                    
+            </script>
+
+    </body>
+</html>

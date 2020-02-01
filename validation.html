@@ -1,0 +1,96 @@
+<!DOCTYPE=html>
+<html>
+    <head>
+        <title> validation</title>
+        <script>
+            function validate()
+            {
+                var a,b,x;
+                a=document.getElementById("t4").value;
+                b=document.getElementById("t5").value;
+                x=document.getElementById("t3").value;
+                if(x==""||isNaN(x)||x.length!=7)
+                {
+                    alert("please enter 7 digit code");
+                    document.getElementById("t3").focus();
+                    return false;
+                }
+                if(a!=b)
+                {
+                    alert("please correct your password");
+                    document.getElementById("t5").focus();
+                    return false;
+                }
+                var email=document.getElementById("t2").value;
+                atpos=email.indexof("@");
+                dotpos=email.indexof(".");
+                if(document.getElementById("t2").value==""||atpos<1||(dotpos-atpos<2))
+                {
+                    alert("please enter correct email")
+                    document.getElementById("t2").focus();
+                    return false;
+                }
+                if(document.getElementById("t1").value=="")
+                {
+                    alert("please provide your name");
+                    document.getElementById("t1").focus();
+                    return false;
+                }
+                if(document.getElementById("t3").value=="")
+                {
+                    alert("please enter your zip code")
+                    document.getElementById("t3").focus();
+                    return false;
+                }
+                if(document.getElementById("t6").value=="")
+                {
+                    alert("please enter country");
+                    document.getElementById("t6").focus();
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="my form " onsubmit="return(validate());">
+        <table cellspacing="4"cellpadding="4" border="2">
+            <tr>
+            <td align="right">name</td>
+            <td><input type="text" name="name" id="t1" /></td>
+            </tr>
+            <tr>
+                    <td align="right">email</td>
+                    <td><input type="text" name="email" id="t2"/></td>
+                    </tr>
+                    <tr>
+                            <td align="right">zipcode</td>
+                            <td><input type="text" name="zipcode" id="t3"/></td>
+                            </tr>
+                            <tr>
+                                    <td align="right">password</td>
+                                    <td><input type="password" name="password" id="t4"/></td>
+                                    </tr>
+                                    <tr>
+                                            <td align="right">re-password</td>
+                                            <td><input type="password" name=" re-password" id="t5"/></td>
+                                            </tr>
+
+                            <tr>
+                                    <td align="right">country</td>
+                                   <td>
+                                       <select name="country" id="t6">
+                                           <option value="-1" selected>[choose yours]</option>
+                                           <option value="1" selected>USA</option>
+                                           <option value="2" selected>UK</option>
+                                           <option value="3" selected>INDIA</option>
+                                       </select>
+                                   </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right"></td>
+                                        <td><input type="submit" value="submit"/></td>
+                                    </tr>
+            </table>
+    </form>
+    </body>
+</html>
